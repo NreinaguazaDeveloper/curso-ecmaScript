@@ -1,78 +1,37 @@
-class User{}; //declaración de clase 
+class User{ // declarando
 
-//const newUser = new User (); //Instacia de un objeto
-
-class USER{
-    //metodos
-    greeting(){
-        return 'bondia';
-    }
 };
 
-const gndx = new USER();
+//const newUser = new User(); //instancia de un objeto.
 
+class user{ //vamos a poner los metodos que va a tener
+    //metodos
+greeting(){
+    return 'Hello';
+}
+};
+
+const gndx = new user (); //Estamos generando la instancia de esta clase.
+
+//usamos el metodo de lo que esta ahi
 console.log(gndx.greeting());
-const bebeloper = new USER();
+
+const bebeloper = new user(); //nueva instancia de la misma clase
 console.log(bebeloper.greeting());
 
-
 //constructor
-class USER {
-    constructor(){
-        console.log('nuevo user');
-    }
-    greeting(){
-        return 'bondia';
-    }
-}
-
-const david = new USER();
-
-//this 
-
-class USER{
-    constructor(){
-        this.name = none;
-    }
-
-    speak(){
-        return 'Hello';
-    }
-
-    greeting(){
-        return `${this.speak} ${this.name}`;
-    }
-}
-
-const ana = new user ('Ana');
-console.log(ana.greeting());
-
-
-//Setters getters
 class user{
-    //CONSTRUCTOR
-    constructor(name, age){
-        this.name = name;
-        this.age = age;
-    }
-        //METODOS   
-    speak(){
-        return 'Hello';
+    //Constructor
+    constructor(){
+        console.log('nuevo usuario'); //cuando se cree una instacia de la clase va a iniciar los elementos del constructor
     }
     greeting(){
-        return `${this.speak} ${this.name}`;
-
-    }
-    get uAge() {
-        return this.age;
-    }
-    set uAge(n){
-        this.age = n;
+        return 'Hello';
     }
 }
 
+//Generamos una const para darle un valor asignado a la clase
+const david = new user();
 
-const bebeloper1 = new user ('David', 15);
 
-console.log(bebeloper1.uAge);
-console.log(bebeloper1.uAge = 20);
+//this
