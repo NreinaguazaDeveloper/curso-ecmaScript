@@ -35,3 +35,48 @@ const david = new user();
 
 
 //this
+
+class user{
+    constructor(name){//constructor va a recibir el valor de name
+    this.name=name;
+    }
+
+//metodos
+ speak(){
+    return 'Hello';
+}
+greeting(){
+    return`${this.speak()} ${this.name}`; //aqui uno los dos nombres
+}
+}
+
+const ana = new user('Ana');
+console.log(ana.greeting());
+
+//setters and getters
+
+class user{
+    //constructor
+    constructor(name, age){ //va a tener dos valores.
+        this.name = name;
+        this.age = age;
+    }
+    //metodos
+
+speak(){
+    return 'Hello';
+}
+greeting(){ //saludar
+    return `${this.speak()} ${this.name}`; //aqui uno los dos nombres
+}
+get uAge(){//Quiero obtener un valor para leerlo dentro de esta clase
+   return this.age; 
+}
+set uAge (n){
+    this.age = n;
+}
+}
+
+const bebeloper2 = new user('David', 14); //aqui pasamis los valores de la función de arriba
+console.log(bebeloper2.uAge);//solo vamos a mostrar el valor que esta contenido dentro de ese elemento
+console.log(bebeloper2.uAge = 20);
