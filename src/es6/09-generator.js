@@ -9,3 +9,12 @@ function* iterate(array){
 const it = iterate(['Anuel','Carl','JH','Dross','Carolina'])
 
 console.log(it.next().value); //Esto solo nos muestra el primer valor.
+console.log(it.next().value); //Esto solo nos muestra el primer valor.
+
+console.log(it.next().value); //Esto solo nos muestra el primer valor.
+
+console.log(it.next().value); //Esto solo nos muestra el primer valor.
+
+console.log(it.next().value); //Esto solo nos muestra el primer valor.
+
+console.log(it.next().value); //Esto solo nos muestra el primer valor.
